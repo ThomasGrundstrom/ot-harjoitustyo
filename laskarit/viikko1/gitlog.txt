@@ -1,0 +1,119 @@
+commit db4074313aafd0d8f65fb2496b90365fcd7f46da
+Author: Thomas Grundstrom <thomas.grundstrom@helsinki.fi>
+Date:   Tue Mar 14 14:54:28 2023 +0200
+
+    file2 nimi muutettu
+
+ tiedostoja/file22 | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ab172cc78c7accee2f7eb86e7f8c2340461e8329
+Author: Thomas Grundstrom <thomas.grundstrom@helsinki.fi>
+Date:   Tue Mar 14 14:53:31 2023 +0200
+
+    tehtävä 11
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 320197b82d969e9e5f9854eb98795a274e0251e8
+Author: Thomas Grundstrom <thomas.grundstrom@helsinki.fi>
+Date:   Tue Mar 14 13:55:43 2023 +0200
+
+    tiedostoja lisätty
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 364175301e06c330bea605dd3f0fe8de9ca5d3e0
+Author: Thomas Grundstrom <thomas.grundstrom@helsinki.fi>
+Date:   Tue Mar 14 13:40:25 2023 +0200
+
+    eka.txt lisätty
+
+ eka.txt    | 19 +++++++++++++++++++
+ kolmas.txt |  3 ++-
+ 2 files changed, 21 insertions(+), 1 deletion(-)
+
+commit dbbca57cf7ab1249e2c74b9c860e3b0493908d5d
+Author: Thomas Grundstrom <thomas.grundstrom@helsinki.fi>
+Date:   Tue Mar 14 11:26:43 2023 +0200
+
+    tiedosto.txt nimi muutettu
+
+ tiedosto.txt | 33 ---------------------------------
+ 1 file changed, 33 deletions(-)
+
+commit d957dd41166c6e67a520bc4fc210e9633958c8df
+Author: Thomas Grundstrom <thomas.grundstrom@helsinki.fi>
+Date:   Tue Mar 14 11:24:49 2023 +0200
+
+    toinen.txt poistettu
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 3e34480c7ebfeea0f2611b924d805574a5e89461
+Author: Thomas Grundstrom <thomas.grundstrom@helsinki.fi>
+Date:   Tue Mar 14 10:21:29 2023 +0200
+
+    tiedosto.txt muutoksia
+
+ tiedosto.txt | 17 ++++++++++++++++-
+ 1 file changed, 16 insertions(+), 1 deletion(-)
+
+commit 9fdbebfdd62b301a9fcd1492e3b90d4a9022d90b
+Author: Thomas Grundstrom <thomas.grundstrom@helsinki.fi>
+Date:   Mon Mar 13 16:35:38 2023 +0200
+
+    muutoksia
+
+ tiedosto.txt | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+
+commit 51bc0df371d60ccbb1b7d2fb5c718d995cddf44a
+Author: Thomas Grundstrom <thomas.grundstrom@helsinki.fi>
+Date:   Mon Mar 13 16:29:49 2023 +0200
+
+    randomstuff
+
+ stuff/random.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 9d901531b5c6892aa7150f396491f496846bcf43
+Author: Thomas Grundstrom <thomas.grundstrom@helsinki.fi>
+Date:   Mon Mar 13 16:26:53 2023 +0200
+
+    muutoksia tehty
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit bb6838bae0a038fffbd1f50ba0b3a72583281c24
+Author: Thomas Grundstrom <thomas.grundstrom@helsinki.fi>
+Date:   Mon Mar 13 16:25:39 2023 +0200
+
+    kolmas.txt luotu
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 1e889afed46be3cfa6e88fc032a32fe284895193
+Author: Thomas Grundstrom <thomas.grundstrom@helsinki.fi>
+Date:   Mon Mar 13 16:23:16 2023 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit acd86fbd05979bde24c7b6e698f9861389de275d
+Author: Thomas Grundstrom <thomas.grundstrom@helsinki.fi>
+Date:   Mon Mar 13 16:20:18 2023 +0200
+
+    tiedosto.txt luotu
