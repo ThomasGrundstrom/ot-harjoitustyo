@@ -1,5 +1,7 @@
-## This is the header
+## Ohjelmistotekniikka, harjoitustyö
 
-This is normal text
+#### Tehtävät
 
-**This is bold text**
+**Viikko 1**
+[gitlog.txt](https://github.com/ThomasGrundstrom/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
+[komentorivi.txt](https://github.com/ThomasGrundstrom/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
