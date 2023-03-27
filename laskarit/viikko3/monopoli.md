@@ -26,7 +26,7 @@
 		+Action toiminto
 	}
 	class Nopat{
-		+int arvo
+		+int heita()
 	}
 	class Aloitusruutu{
 		+String nimi
@@ -67,4 +67,5 @@
 		+int taloja
 		+int hotelleja
 	}
+	Nopat --> "2-12"
 ```
