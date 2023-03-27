@@ -4,7 +4,7 @@
 	Pelilauta <|-- Ruutu
 	Pelilauta <|-- Nopat
 	Pelilauta <|-- Kortit
-	Pelilauta <|-- Omistus
+	Pelilauta <|-- Omistajuus
 	Ruutu <|-- Aloitusruutu
 	Ruutu <|-- Vankila
 	Ruutu <|-- Sattuma
