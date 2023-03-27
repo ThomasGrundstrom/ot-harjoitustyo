@@ -67,5 +67,4 @@
 		+int taloja
 		+int hotelleja
 	}
-	Nopat --> "2-12"
 ```
