@@ -1,17 +1,9 @@
-```mermaid
+---
+title: Bank example
+---
 classDiagram
-	Pelilauta <|-- Pelaaja
-	Pelilauta <|-- Ruutu
-	Pelilauta <|-- Nopat
-	class Pelaaja{
-		+String pelinappula
-		+int ruutu
-	}
-	class Ruutu{
-		+int numero
-		+int seuraava
-	}
-	class Nopat{
-		+int arvo
-	}
-```
+    class BankAccount
+    BankAccount : +String owner
+    BankAccount : +Bigdecimal balance
+    BankAccount : +deposit(amount)
+    BankAccount : +withdrawal(amount)
