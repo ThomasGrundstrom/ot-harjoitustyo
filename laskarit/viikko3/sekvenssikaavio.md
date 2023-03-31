@@ -18,6 +18,5 @@
 			Engine->>FuelTank: consume(10)
 	else False
 		Engine-->>Machine: False
-		Machine-->>main:
-	Machine-->>main:
+	Machine-->>main: back
 ```
