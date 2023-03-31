@@ -10,8 +10,14 @@
 	Machine->>Engine: start()
 	Engine->>FuelTank: consume(5)
 	Machine->>Engine: is_running()
-	Engine-->>Machine: True
-	Machine->>Engine: use_energy()
-	Engine->>FuelTank: consume(10)
-	Machine-->>main: back
+	Engine->>FuelTank: fuel_contents > 0
+	alt True
+		Engine-->>Machine: True
+		loop Until empty
+			Machine->>Engine: use_energy()
+			Engine->>FuelTank: consume(10)
+	else False
+		Engine-->>Machine: False
+		Machine-->>main:
+	Machine-->>main:
 ```
