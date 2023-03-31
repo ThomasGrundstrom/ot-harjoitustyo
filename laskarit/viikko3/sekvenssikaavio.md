@@ -16,7 +16,9 @@
 		loop Until empty
 			Machine->>Engine: use_energy()
 			Engine->>FuelTank: consume(10)
+		end
 	else False
 		Engine-->>Machine: False
+	end
 	Machine-->>main: back
 ```
