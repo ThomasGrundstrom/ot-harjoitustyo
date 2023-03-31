@@ -10,6 +10,6 @@
 	participant lippu_luukku
 	main->>lippu_luukku: osta_matkakortti("Kalle")
 	lippu_luukku->>kallen_kortti: __init__("Kalle")
-	kallen_kortti-->>main
+	kallen_kortti-->>main: back
 
 ```
