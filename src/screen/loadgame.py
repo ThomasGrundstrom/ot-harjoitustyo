@@ -1,4 +1,6 @@
 import pygame
+from actions.actions import actions
+from entities.snake import snake
 
 class Screen:
     def __init__(self):
@@ -18,10 +20,12 @@ class Screen:
 
     def loop(self):
         while True:
-            for i in pygame.event.get():
-                if i.type == pygame.QUIT:
-                    exit()
+            actions.check_actions()
+            snake.move_snake()
             self.draw_screen()
+
+
+screen = Screen()
 
 if __name__ == "__main__":
     Screen()

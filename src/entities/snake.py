@@ -34,3 +34,15 @@ class Snake:
     
     def add_length(self):
         self.length += 1
+    
+    def move_snake(self):
+        if self.up:
+            self.y -= 1
+        elif self.down:
+            self.y += 1
+        elif self.left:
+            self.x -= 1
+        elif self.right:
+            self.x += 1
+
+snake = Snake()
