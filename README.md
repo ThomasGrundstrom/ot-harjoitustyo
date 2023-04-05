@@ -8,4 +8,9 @@
 
 [changelog.md](https://github.com/ThomasGrundstrom/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
 
+
+### Ohjelman käynnistäminen:
+
+Ohjelman voi käynnistää komennolla "poetry run invoke start"
+
 *More coming soon*
