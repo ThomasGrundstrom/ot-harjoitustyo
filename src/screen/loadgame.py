@@ -1,7 +1,7 @@
 import pygame
 from actions.actions import actions
 from entities.snake import snake
-
+from snakemap.snakemap import snakemap
 
 class Screen:
     def __init__(self):
@@ -17,13 +17,14 @@ class Screen:
         white = (255, 255, 255)
         self.screen.fill(white)
         pygame.display.flip()
-        self.clock.tick(60)
+        self.clock.tick(1)
 
     def loop(self):
         while True:
             actions.check_actions()
             snake.move_snake()
             self.draw_screen()
+            print(snakemap.update())
 
 
 screen = Screen()
