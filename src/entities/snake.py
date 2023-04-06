@@ -1,12 +1,12 @@
 class Snake:
     def __init__(self):
-        self.length = 2
-        self.x = 2
+        self.x = 4
         self.y = 4
         self.up = False
         self.down = False
         self.left = False
         self.right = True
+        self.positions = [(4, 3), (4, 4)]
 
     def moveup(self):
         if self.left or self.right:
@@ -32,8 +32,8 @@ class Snake:
             self.down = False
             self.right = True
 
-    def add_length(self):
-        self.length += 1
+    def eat_apple(self):
+        return True
 
     def move_snake(self):
         if self.up:
@@ -44,6 +44,8 @@ class Snake:
             self.x -= 1
         elif self.right:
             self.x += 1
+        self.positions.pop(0)
+        self.positions.append((self.y, self.x))
 
 
 snake = Snake()
