@@ -6,7 +6,7 @@ from entities.snake import snake
 class Screen:
     def __init__(self):
         pygame.init()
-        self.screen = pygame.display.set_mode((1280, 960))
+        self.screen = pygame.display.set_mode((800, 800))
         pygame.display.set_caption("Pysnake")
         self.clock = pygame.time.Clock()
 
