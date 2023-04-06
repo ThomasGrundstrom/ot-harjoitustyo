@@ -45,3 +45,16 @@ class TestSnake(unittest.TestCase):
         snake = Snake()
         snake.add_length()
         self.assertEqual(snake.length, 3)
+
+    def test_moving_snake_works(self):
+        snake = Snake()
+        self.assertEqual(snake.y, 4)
+        self.assertEqual(snake.x, 2)
+        self.assertEqual(snake.right, True)
+        snake.move_snake()
+        self.assertEqual(snake.y, 4)
+        self.assertEqual(snake.x, 3)
+        snake.moveup()
+        snake.move_snake()
+        self.assertEqual(snake.y, 3)
+        self.assertEqual(snake.x, 3)
