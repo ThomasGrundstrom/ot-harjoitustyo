@@ -2,6 +2,7 @@ import pygame
 from actions.actions import actions
 from entities.snake import snake
 
+
 class Screen:
     def __init__(self):
         pygame.init()
@@ -10,7 +11,7 @@ class Screen:
         self.clock = pygame.time.Clock()
 
         self.loop()
-    
+
     def draw_screen(self):
         black = (0, 0, 0)
         white = (255, 255, 255)

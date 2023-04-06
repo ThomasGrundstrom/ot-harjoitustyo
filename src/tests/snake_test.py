@@ -1,10 +1,11 @@
 import unittest
 from entities.snake import Snake
 
+
 class TestSnake(unittest.TestCase):
     def setUp(self):
         self.snake = Snake()
-    
+
     def test_snake_starting_values(self):
         self.assertEqual(self.snake.length, 2)
         self.assertEqual(self.snake.x, 2)
@@ -39,7 +40,7 @@ class TestSnake(unittest.TestCase):
         self.snake.moveright()
         self.assertEqual(self.snake.right, True)
         self.assertEqual(self.snake.down, False)
-    
+
     def test_adding_length_works(self):
         snake = Snake()
         snake.add_length()
