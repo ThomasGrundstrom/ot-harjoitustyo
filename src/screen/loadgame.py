@@ -15,16 +15,23 @@ class Screen:
     def draw_screen(self):
         black = (0, 0, 0)
         white = (255, 255, 255)
+        green = (0, 255, 0)
         self.screen.fill(white)
+        for y in range(10):
+            for x in range(10):
+                if snakemap.grid[y][x] == 1:
+                    pygame.draw.rect(self.screen, black, (y*80, x*80, 80, 80))
+                elif snakemap.grid[y][x] == 2:
+                    pygame.draw.rect(self.screen, green, (y*80, x*80, 80, 80))
+
         pygame.display.flip()
-        self.clock.tick(1)
+        self.clock.tick(2)
 
     def loop(self):
         while True:
             actions.check_actions()
             snake.move_snake()
             self.draw_screen()
-            print(snakemap.update())
 
 
 screen = Screen()
