@@ -52,7 +52,7 @@ class TestSnake(unittest.TestCase):
         snake.move_snake()
         self.assertEqual(snake.y, 3)
         self.assertEqual(snake.x, 5)
-    
+
     def test_snake_body_moves_correctly(self):
         self.assertEqual(self.snake.positions, [(4, 3), (4, 4)])
         self.snake.move_snake()
