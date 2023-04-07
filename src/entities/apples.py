@@ -7,7 +7,9 @@ class Apple:
         self.x = 7
 
     def spawn(self):
-        y = random.randint(1, 8)
-        x = random.randint(1, 8)
+        y = random.randint(1, 10)
+        x = random.randint(1, 10)
         self.y = y
         self.x = x
+
+apple = Apple()
