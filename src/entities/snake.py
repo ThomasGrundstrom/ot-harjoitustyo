@@ -1,3 +1,5 @@
+from entities.apples import apple
+
 class Snake:
     def __init__(self):
         self.x = 4
@@ -32,19 +34,19 @@ class Snake:
             self.down = False
             self.right = True
 
-    def eat_apple(self):
-        return True
-
     def move_snake(self):
         if self.up:
-            self.y -= 1
-        elif self.down:
-            self.y += 1
-        elif self.left:
             self.x -= 1
-        elif self.right:
+        elif self.down:
             self.x += 1
-        self.positions.pop(0)
+        elif self.left:
+            self.y -= 1
+        elif self.right:
+            self.y += 1
+        if not self.positions[-1] == (apple.y, apple.x):
+            self.positions.pop(0)
+        elif self.positions[-1] == (apple.y, apple.x):
+            apple.spawn()
         self.positions.append((self.y, self.x))
 
 
