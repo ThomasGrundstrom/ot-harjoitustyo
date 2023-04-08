@@ -10,3 +10,8 @@
 - Lisätty Screen-luokka, jolla pygame-ikkunan saa auki.
 - Lisätty Actions-luokka, joka suorittaa tarkistukset tapahtumista.
 - Tehty index.py-tiedostoon muokkaus niin, että ohjelma oikeasti käynnistyy.
+- Lisätty Gamemap-luokka, joka ilmoittaa seinien, snaken ja omenan sijainnit.
+- Päivitetty Screen-luokkaa siten, että pygame-ikkunassa näkyy seinät, snake ja omena.
+- Snaken liikkeen suuntaan voi vaikuttaa nuolinäppäimillä.
+- Snake kasvaa pituutta syödessään omenan. Uusi omena sijoitetaan satunnaiseen kohtaan kartalla.
+
