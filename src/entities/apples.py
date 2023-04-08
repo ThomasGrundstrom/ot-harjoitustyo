@@ -12,4 +12,5 @@ class Apple:
         self.y = y
         self.x = x
 
+
 apple = Apple()

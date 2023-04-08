@@ -1,5 +1,6 @@
 from entities.apples import apple
 
+
 class Snake:
     def __init__(self):
         self.x = 4
