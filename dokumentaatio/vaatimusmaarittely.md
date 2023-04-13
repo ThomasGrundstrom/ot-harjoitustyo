@@ -11,8 +11,8 @@ Peli koostuu aloitusnäytöstä, ohjenäytöstä, varsinaisesta pelistä, sekä 
 ### Toiminnallisuus
 
 - Pelin aloittaminen ja ohjenäkymään siirtyminen onnistuvat klikkaamalla oikeista kohdista aloitusnäytöllä tai game over-näytöllä.
-- Pelissä käärme liikkuu itsestään. Liikkeen suuntaa voi muuttaa nuolinäppäimillä.
-- "Omena" tulee kerätyksi, kun käärmeen pää kulkee samasta ruudusta, jossa "omena" sijaitsee. 
+- Pelissä käärme liikkuu itsestään. Liikkeen suuntaa voi muuttaa nuolinäppäimillä. -> Tehty
+- "Omena" tulee kerätyksi, kun käärmeen pää kulkee samasta ruudusta, jossa "omena" sijaitsee. -> Tehty
 
 ### Jatkokehitys
 
