@@ -14,10 +14,21 @@ class Gamemap:
         self.grid[4][4] = 2
         self.grid[4][3] = 2
         self.grid[7][7] = 3
+        self.zeros = []
+    
+    def updateavailable(self):
+        tempavailable = []
+        for y in range(1, 11):
+            for x in range(1, 11):
+                if self.grid[y][x] == 0:
+                    tempavailable.append((y, x))
+        self.zeros = tempavailable
 
     def update(self):
         actions.check_actions()
         snake.move_snake()
+        self.updateavailable()
+        apple.set_available(self.zeros)
         for y in range(12):
             for x in range(12):
                 if (y, x) in snake.positions:
