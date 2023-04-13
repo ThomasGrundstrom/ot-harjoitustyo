@@ -37,18 +37,18 @@ class Snake:
 
     def move_snake(self):
         if self.up:
-            self.x -= 1
-        elif self.down:
-            self.x += 1
-        elif self.left:
             self.y -= 1
-        elif self.right:
+        elif self.down:
             self.y += 1
+        elif self.left:
+            self.x -= 1
+        elif self.right:
+            self.x += 1
         if not self.positions[-1] == (apple.y, apple.x):
             self.positions.pop(0)
         elif self.positions[-1] == (apple.y, apple.x):
             apple.spawn()
-        self.positions.append((self.y, self.x))
+        self.positions.append((self.x, self.y))
 
 
 snake = Snake()
