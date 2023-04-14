@@ -44,7 +44,7 @@ class Snake:
             self.x -= 1
         elif self.right:
             self.x += 1
-        if not self.positions[-1] == (apple.y, apple.x):
+        if self.positions[-1] != (apple.y, apple.x):
             self.positions.pop(0)
         elif self.positions[-1] == (apple.y, apple.x):
             apple.spawn()
