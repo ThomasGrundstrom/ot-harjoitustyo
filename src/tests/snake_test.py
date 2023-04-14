@@ -1,6 +1,5 @@
 import unittest
 from entities.snake import Snake
-from entities.apples import Apple
 
 
 class TestSnake(unittest.TestCase):
