@@ -7,5 +7,6 @@
 - 6.4: 4h: Gamemap-luokan luominen, kehitystä muihin luokkiin.
 - 7.4: 2h: Apples-luokan sisällytys peliin, omena lisätään satunnaiseen paikkaan kartalla, kun edellinen omena tulee syödyksi. Snake kasvaa yhden ruudun verran pidemmäksi kun syö omenan.
 - 13.4: 1h: Apples- ja Gamemap-luokkien muokkaus siten, että omena ei voi "spawnata" ruutuihin, joissa snake on.
+- 14.4: 4h: Testien luomista tähän mennessä tehdyille luokille, luokkakaavion teko.
 
-*Yhteensä: 17h*
+*Yhteensä: 21h*
