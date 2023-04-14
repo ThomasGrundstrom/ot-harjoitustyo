@@ -8,6 +8,8 @@
 
 [changelog.md](https://github.com/ThomasGrundstrom/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
 
+[arkkitehtuuri.md](https://github.com/ThomasGrundstrom/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+
 
 ### Ohjelman käynnistäminen:
 
