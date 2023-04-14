@@ -13,8 +13,8 @@
 
 ### Ohjelman komentorivikomennot:
 
-- Ohjelman käynnistäminen toimii komennolla: *poetry run invoke start*
-- Ohjelman testit suoritetaan komennolla: *poetry run invoke test*
-- Testikattavuusraportti komennolla: *poetry run invoke coverage-report*
-- Pylint-tarkistukset komennolla: *poetry run invoke lint*
+- Ohjelman käynnistäminen toimii komennolla: **poetry run invoke start**
+- Ohjelman testit suoritetaan komennolla: **poetry run invoke test**
+- Testikattavuusraportti komennolla: **poetry run invoke coverage-report**
+- Pylint-tarkistukset komennolla: **poetry run invoke lint**
 
