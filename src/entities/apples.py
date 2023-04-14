@@ -16,8 +16,7 @@ class Apple:
             self.y = self.available[position][0]
             self.x = self.available[position][1]
             return self.available[position]
-        else:
-            return "game won"
+        return "game won"
 
 
 apple = Apple()
