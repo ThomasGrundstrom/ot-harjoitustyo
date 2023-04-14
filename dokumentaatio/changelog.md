@@ -14,4 +14,4 @@
 - Päivitetty Screen-luokkaa siten, että pygame-ikkunassa näkyy seinät, snake ja omena.
 - Snaken liikkeen suuntaan voi vaikuttaa nuolinäppäimillä.
 - Snake kasvaa pituutta syödessään omenan. Uusi omena sijoitetaan satunnaiseen kohtaan kartalla.
-
+- Uusi omena ei voi "spawnata" muualle kuin tyhjiin ruutuihin.
