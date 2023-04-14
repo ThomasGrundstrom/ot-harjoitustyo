@@ -6,7 +6,7 @@ class Apple:
         self.y = 7
         self.x = 7
         self.available = []
-    
+
     def set_available(self, available):
         self.available = available
 

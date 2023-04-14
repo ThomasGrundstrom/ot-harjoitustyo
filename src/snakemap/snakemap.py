@@ -15,7 +15,7 @@ class Gamemap:
         self.grid[4][3] = 2
         self.grid[7][7] = 3
         self.zeros = []
-    
+
     def updateavailable(self):
         tempavailable = []
         for y in range(1, 11):
