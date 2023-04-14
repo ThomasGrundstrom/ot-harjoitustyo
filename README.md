@@ -11,8 +11,10 @@
 [arkkitehtuuri.md](https://github.com/ThomasGrundstrom/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
 
-### Ohjelman käynnistäminen:
+### Ohjelman komentorivikomennot:
 
-Ohjelman voi käynnistää komennolla "poetry run invoke start"
+- Ohjelman käynnistäminen toimii komennolla: *poetry run invoke start*
+- Ohjelman testit suoritetaan komennolla: *poetry run invoke test*
+- Testikattavuusraportti komennolla: *poetry run invoke coverage-report*
+- Pylint-tarkistukset komennolla: *poetry run invoke lint*
 
-*More coming soon*
