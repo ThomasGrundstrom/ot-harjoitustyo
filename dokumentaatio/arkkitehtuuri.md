@@ -5,6 +5,7 @@
 	Actions <|-- Snake
 	Gamemap <|-- Snake
 	Snake <|-- Apple
+	Gamemap <|-- Apple
 	class Screen{
 		+pygame
 		+screen
