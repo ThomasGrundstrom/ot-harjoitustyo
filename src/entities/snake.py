@@ -13,28 +13,28 @@ class Snake:
         self.positions = [(4, 3), (4, 4)]
 
     def moveup(self):
-        if (self.left or self.right) and self.changeddirections == False:
+        if (self.left or self.right) and not self.changeddirections:
             self.right = False
             self.left = False
             self.up = True
             self.changeddirections = True
 
     def movedown(self):
-        if (self.left or self.right) and self.changeddirections == False:
+        if (self.left or self.right) and not self.changeddirections:
             self.right = False
             self.left = False
             self.down = True
             self.changeddirections = True
 
     def moveleft(self):
-        if (self.up or self.down) and self.changeddirections == False:
+        if (self.up or self.down) and not self.changeddirections:
             self.up = False
             self.down = False
             self.left = True
             self.changeddirections = True
 
     def moveright(self):
-        if (self.up or self.down) and self.changeddirections == False:
+        if (self.up or self.down) and not self.changeddirections:
             self.up = False
             self.down = False
             self.right = True
