@@ -9,31 +9,36 @@ class Snake:
         self.down = False
         self.left = False
         self.right = True
+        self.changeddirections = False
         self.positions = [(4, 3), (4, 4)]
 
     def moveup(self):
-        if self.left or self.right:
+        if (self.left or self.right) and self.changeddirections == False:
             self.right = False
             self.left = False
             self.up = True
+            self.changeddirections = True
 
     def movedown(self):
-        if self.left or self.right:
+        if (self.left or self.right) and self.changeddirections == False:
             self.right = False
             self.left = False
             self.down = True
+            self.changeddirections = True
 
     def moveleft(self):
-        if self.up or self.down:
+        if (self.up or self.down) and self.changeddirections == False:
             self.up = False
             self.down = False
             self.left = True
+            self.changeddirections = True
 
     def moveright(self):
-        if self.up or self.down:
+        if (self.up or self.down) and self.changeddirections == False:
             self.up = False
             self.down = False
             self.right = True
+            self.changeddirections = True
 
     def move_snake(self):
         if self.up:
@@ -49,6 +54,7 @@ class Snake:
         elif self.positions[-1] == (apple.y, apple.x):
             apple.spawn()
         self.positions.append((self.x, self.y))
+        self.changeddirections = False
 
 
 snake = Snake()
