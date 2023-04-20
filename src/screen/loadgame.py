@@ -45,4 +45,5 @@ class Screen:
         self.screen.fill(black)
         self.screen.blit(txt, (330, 300))
 
+
 screen = Screen()
