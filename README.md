@@ -13,6 +13,8 @@
 
 ### Ohjelman komentorivikomennot:
 
+**Aluksi pitää ladata tarvittavat riippuvuudet komellolla:** _**poetry install**_
+
 - Ohjelman käynnistäminen toimii komennolla: **poetry run invoke start**
 - Ohjelman testit suoritetaan komennolla: **poetry run invoke test**
 - Testikattavuusraportti komennolla: **poetry run invoke coverage-report**
