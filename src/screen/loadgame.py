@@ -26,13 +26,23 @@ class Screen:
                 elif snakemap.grid[y][x] == 3:
                     pygame.draw.rect(self.screen, red, (y*68, x*68, 68, 68))
 
+        if snakemap.gamelost:
+            self.losegame()
+
         pygame.display.flip()
-        self.clock.tick(3)
+        self.clock.tick(5)
 
     def loop(self):
         while True:
             snakemap.update()
             self.draw_screen()
 
+    def losegame(self):
+        black = (0, 0, 0)
+        red = (255, 0, 0)
+        font = pygame.font.SysFont("Arial", 28)
+        txt = font.render("GAME OVER", True, red)
+        self.screen.fill(black)
+        self.screen.blit(txt, (330, 300))
 
 screen = Screen()
