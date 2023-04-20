@@ -15,3 +15,11 @@
 - Snaken liikkeen suuntaan voi vaikuttaa nuolinäppäimillä.
 - Snake kasvaa pituutta syödessään omenan. Uusi omena sijoitetaan satunnaiseen kohtaan kartalla.
 - Uusi omena ei voi "spawnata" muualle kuin tyhjiin ruutuihin.
+
+
+### Viikko 5
+
+- Pelin häviäminen mahdollista, jos snake törmää itseensä tai seinään.
+- Alustava game over-näkymä lisätty pelin häviämisen jälkeen.
+- Snake ei voi enää kääntyä kahta kertaa saman "tickin" aikana.
+
