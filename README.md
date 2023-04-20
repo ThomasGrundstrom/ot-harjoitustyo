@@ -10,6 +10,7 @@
 
 [arkkitehtuuri.md](https://github.com/ThomasGrundstrom/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
+[Viikko5 release](https://github.com/ThomasGrundstrom/ot-harjoitustyo/releases/tag/viikko5)
 
 ### Ohjelman komentorivikomennot:
 
