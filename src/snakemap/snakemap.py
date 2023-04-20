@@ -15,6 +15,7 @@ class Gamemap:
         self.grid[4][3] = 2
         self.grid[7][7] = 3
         self.zeros = []
+        self.gamelost = False
 
     def updateavailable(self):
         tempavailable = []
@@ -24,9 +25,20 @@ class Gamemap:
                     tempavailable.append((y, x))
         self.zeros = tempavailable
 
+    def losegame(self):
+        self.gamelost = True
+
     def update(self):
         actions.check_actions()
         snake.move_snake()
+        if snake.positions[-1][0] == 0 or snake.positions[-1][0] == 11:
+            self.losegame()
+        if snake.positions[-1][1] == 0 or snake.positions[-1][1] == 11:
+            self.losegame()
+        for i in range(len(snake.positions)):
+            for j in range(i+1, len(snake.positions)):
+                if snake.positions[i] == snake.positions[j]:
+                    self.losegame()
         self.updateavailable()
         apple.set_available(self.zeros)
         for y in range(12):
