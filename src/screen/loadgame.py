@@ -30,7 +30,7 @@ class Screen:
             self.losegame()
 
         pygame.display.flip()
-        self.clock.tick(5)
+        self.clock.tick(3)
 
     def loop(self):
         while True:
