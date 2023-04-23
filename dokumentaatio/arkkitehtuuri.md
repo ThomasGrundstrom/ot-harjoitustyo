@@ -52,6 +52,8 @@
 
 ## Sekvenssikaavio:
 
+Tilanteessa, jossa käyttäjä käynnistää pelin, ja ohjaa snaken ensimmäiselle omenalle mahdollisimman pienellä määrällä käännöksiä, ohjelman toiminnallisuus näyttää seuraavalta:
+
 ```mermaid
  sequenceDiagram
 	actor User
