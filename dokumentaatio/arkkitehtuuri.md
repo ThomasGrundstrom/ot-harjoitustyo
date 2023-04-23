@@ -62,7 +62,7 @@
 	participant Snake
 	participant Apple
 	game->>Screen: loop()
-	loop Until snake has x value of 7
+	loop Until screen updates when snake has x value of 7
 	Screen->>Gamemap: update()
 	Gamemap->>Actions: check_actions()
 	Actions->>pygame: event.get()
@@ -70,11 +70,50 @@
 	Actions-->>Gamemap: 
 	Gamemap->>Snake: move_snake()
 	Snake-->>Gamemap: 
-	Gamemap-->>Gamemap: updateavailable()
+	Gamemap->>Gamemap: updateavailable()
 	Gamemap->>Apple: set_available(zeros)
 	Apple-->>Gamemap: 
 	Gamemap-->>Screen: grid
-	Screen-->>Screen: draw_screen()
+	Screen->>Screen: draw_screen()
 	end
+	Screen->>Gamemap: update()
+	Gamemap->>Actions: check_actions()
+	Actions->>pygame: event.get()
+	pygame-->>Actions: pygame.K_DOWN
+	Actions->>Snake: movedown()
+	Snake-->>Actions: 
+	Actions-->>Gamemap: 
+	Gamemap->>Snake: move_snake()
+	Snake-->>Gamemap: 
+	Gamemap-->>Screen: grid
+	Screen->>Screen: draw_screen()
+	loop Until screen updates when snake has y value of 6
+	Screen->>Gamemap: update()
+	Gamemap->>Actions: check_actions()
+	Actions->>pygame: event.get()
+	pygame-->>Actions: 
+	Actions-->>Gamemap: 
+	Gamemap->>Snake: move_snake()
+	Snake-->>Gamemap: 
+	Gamemap->>Gamemap: updateavailable()
+	Gamemap->>Apple: set_available(zeros)
+	Apple-->>Gamemap: 
+	Gamemap-->>Screen: grid
+	Screen->>Screen: draw_screen()
+	end
+	Screen->>Gamemap: update()
+	Gamemap->>Actions: check_actions()
+	Actions->>pygame: event.get()
+	pygame-->>Actions: 
+	Actions-->>Gamemap:
+	Gamemap->>Snake: move_snake()
+	Snake->>Apple: spawn()
+	Apple-->>Snake: available[position]
+	Snake-->>Gamemap: 
+	Gamemap->>Gamemap: updateavailable()
+	Gamemap->>Apple: set_available(zeros)
+	Apple-->>Gamemap: 
+	Gamemap-->>Screen: grid
+	Screen->>Screen: draw_screen()
 
 ```
