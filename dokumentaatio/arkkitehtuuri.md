@@ -1,3 +1,5 @@
+## Luokkakaavio:
+
 ```mermaid
  classDiagram
 	Screen <|-- Gamemap
@@ -44,5 +46,33 @@
 		+set_available()
 		+spawn()
 	}
+
+```
+
+
+## Sekvenssikaavio:
+
+```mermaid
+ sequenceDiagram
+	participant game
+	participant Screen
+	participant Gamemap
+	participant Actions
+	participant pygame
+	participant Snake
+	participant Apple
+	game->>Screen: loop()
+	Screen->>Gamemap: update()
+	Gamemap->>Actions: check_actions()
+	Actions->>pygame: event.get()
+	pygame-->>Actions:
+	Actions-->>Gamemap:
+	Gamemap->>Snake: move_snake()
+	Snake-->>Gamemap:
+	Gamemap-->>Gamemap: updateavailable()
+	Gamemap->>Apple: set_available(zeros)
+	Apple-->>Gamemap:
+	Gamemap-->>Screen: grid
+	Screen-->>Screen: draw_screen()
 
 ```
