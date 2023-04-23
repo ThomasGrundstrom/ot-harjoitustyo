@@ -105,7 +105,7 @@
 	Gamemap->>Actions: check_actions()
 	Actions->>pygame: event.get()
 	pygame-->>Actions: 
-	Actions-->>Gamemap:
+	Actions-->>Gamemap: 
 	Gamemap->>Snake: move_snake()
 	Snake->>Apple: spawn()
 	Apple-->>Snake: available[position]
