@@ -62,6 +62,7 @@
 	participant Snake
 	participant Apple
 	game->>Screen: loop()
+	loop Until snake has x value of 7
 	Screen->>Gamemap: update()
 	Gamemap->>Actions: check_actions()
 	Actions->>pygame: event.get()
@@ -74,5 +75,6 @@
 	Apple-->>Gamemap: 
 	Gamemap-->>Screen: grid
 	Screen-->>Screen: draw_screen()
+	end
 
 ```
