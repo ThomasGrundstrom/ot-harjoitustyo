@@ -9,5 +9,6 @@
 - 13.4: 1h: Apples- ja Gamemap-luokkien muokkaus siten, että omena ei voi "spawnata" ruutuihin, joissa snake on.
 - 14.4: 4h: Testien luomista tähän mennessä tehdyille luokille, luokkakaavion teko.
 - 20.4: 2h: Tehty pelin häviäminen mahdolliseksi, game over-näkymä lisätty, snaken liikettä korjattu.
+- 23.4: 2h: Sekvenssikaavion teko, bugien korjausta.
 
-*Yhteensä: 23h*
+*Yhteensä: 25h*
