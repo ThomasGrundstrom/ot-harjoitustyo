@@ -54,6 +54,7 @@
 
 ```mermaid
  sequenceDiagram
+	actor User
 	participant game
 	participant Screen
 	participant Gamemap
@@ -61,6 +62,7 @@
 	participant pygame
 	participant Snake
 	participant Apple
+	User->>game: poetry run invoke start
 	game->>Screen: loop()
 	loop Until screen updates when snake has x value of 7
 	Screen->>Gamemap: update()
@@ -76,6 +78,7 @@
 	Gamemap-->>Screen: grid
 	Screen->>Screen: draw_screen()
 	end
+	User->>pygame: K_DOWN
 	Screen->>Gamemap: update()
 	Gamemap->>Actions: check_actions()
 	Actions->>pygame: event.get()
