@@ -65,13 +65,13 @@
 	Screen->>Gamemap: update()
 	Gamemap->>Actions: check_actions()
 	Actions->>pygame: event.get()
-	pygame-->>Actions:
-	Actions-->>Gamemap:
+	pygame-->>Actions: 
+	Actions-->>Gamemap: 
 	Gamemap->>Snake: move_snake()
-	Snake-->>Gamemap:
+	Snake-->>Gamemap: 
 	Gamemap-->>Gamemap: updateavailable()
 	Gamemap->>Apple: set_available(zeros)
-	Apple-->>Gamemap:
+	Apple-->>Gamemap: 
 	Gamemap-->>Screen: grid
 	Screen-->>Screen: draw_screen()
 
