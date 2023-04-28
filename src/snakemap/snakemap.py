@@ -15,6 +15,7 @@ class Gamemap:
         self.grid[4][3] = 2
         self.grid[7][7] = 3
         self.zeros = []
+        self.gamewon = False
         self.gamelost = False
 
     def updateavailable(self):
@@ -24,8 +25,15 @@ class Gamemap:
                 if self.grid[y][x] == 0:
                     tempavailable.append((y, x))
         self.zeros = tempavailable
+        if len(self.zeros) == 0:
+            self.wingame()
+
+    def wingame(self):
+        snake.set_stationary()
+        self.gamewon = True
 
     def losegame(self):
+        snake.set_stationary()
         self.gamelost = True
 
     def update(self):
