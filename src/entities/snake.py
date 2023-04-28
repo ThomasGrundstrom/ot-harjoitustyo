@@ -46,7 +46,7 @@ class Snake:
                 apple.spawn()
             self.positions.append((self.x, self.y))
             self.changeddirections = False
-    
+
     def set_stationary(self):
         self.moving = False
 

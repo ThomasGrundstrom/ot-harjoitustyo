@@ -21,12 +21,15 @@ class Screen:
         for y in range(12):
             for x in range(12):
                 if snakemap.grid[y][x] == 1:
-                    pygame.draw.rect(self.screen, self.black, (y*68, x*68, 68, 68))
+                    pygame.draw.rect(self.screen, self.black,
+                                     (y*68, x*68, 68, 68))
                 elif snakemap.grid[y][x] == 2:
-                    pygame.draw.rect(self.screen, self.green, (y*68, x*68, 68, 68))
+                    pygame.draw.rect(self.screen, self.green,
+                                     (y*68, x*68, 68, 68))
                 elif snakemap.grid[y][x] == 3:
-                    pygame.draw.rect(self.screen, self.red, (y*68, x*68, 68, 68))
-        
+                    pygame.draw.rect(self.screen, self.red,
+                                     (y*68, x*68, 68, 68))
+
         if snakemap.gamewon:
             self.wingame()
 
@@ -40,7 +43,7 @@ class Screen:
         while True:
             snakemap.update()
             self.draw_screen()
-    
+
     def wingame(self):
         txt = self.font.render("CONGRATULATIONS!", True, self.black)
         self.screen.fill(self.white)
