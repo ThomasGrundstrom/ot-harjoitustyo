@@ -47,7 +47,7 @@ class Screen:
     def wingame(self):
         txt = self.font.render("CONGRATULATIONS!", True, self.black)
         self.screen.fill(self.white)
-        self.screen.blit(txt, (330, 300))
+        self.screen.blit(txt, (270, 300))
 
     def losegame(self):
         txt = self.font.render("GAME OVER", True, self.red)
