@@ -10,5 +10,6 @@
 - 14.4: 4h: Testien luomista tähän mennessä tehdyille luokille, luokkakaavion teko.
 - 20.4: 2h: Tehty pelin häviäminen mahdolliseksi, game over-näkymä lisätty, snaken liikettä korjattu.
 - 23.4: 2h: Sekvenssikaavion teko, bugien korjausta.
+- 28.4: 1h: Snaken liikkeen suuntaa ohjaavan koodin optimointi, lisätty voittonäkymä.
 
-*Yhteensä: 25h*
+*Yhteensä: 26h*
