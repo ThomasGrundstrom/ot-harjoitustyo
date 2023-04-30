@@ -6,16 +6,18 @@ class Snake:
         self.x = 4
         self.y = 4
         self.direction = 1
-        self.moving = True
+        self.moving = False
         self.changeddirections = False
-        self.positions = [(4, 3), (4, 4)]
+        self.positions = [(3, 4), (4, 4)]
 
     def moveup(self):
+        self.moving = True
         if (self.direction == 1 or self.direction == 3) and not self.changeddirections:
             self.direction = 0
             self.changeddirections = True
 
     def movedown(self):
+        self.moving = True
         if (self.direction == 1 or self.direction == 3) and not self.changeddirections:
             self.direction = 2
             self.changeddirections = True
@@ -26,6 +28,7 @@ class Snake:
             self.changeddirections = True
 
     def moveright(self):
+        self.moving = True
         if (self.direction == 0 or self.direction == 2) and not self.changeddirections:
             self.direction = 1
             self.changeddirections = True
