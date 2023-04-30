@@ -58,6 +58,8 @@ class Screen:
                 break
             self.draw_screen()
         while True:
+            if scorecounter.score == 97:
+                snakemap.wingame()
             snakemap.update()
             self.draw_screen()
 
