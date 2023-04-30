@@ -1,4 +1,5 @@
 import random
+from score.scorecounter import scorecounter
 
 
 class Apple:
@@ -11,6 +12,7 @@ class Apple:
         self.available = available
 
     def spawn(self):
+        scorecounter.add_score()
         if len(self.available) > 0:
             position = random.randint(0, len(self.available) - 1)
             self.y = self.available[position][0]
