@@ -79,7 +79,7 @@ class Screen:
         self.screen.blit(welcometxt, (270, 200))
         self.screen.blit(playbuttontxt, (375, 315))
         self.draw_art()
-    
+
     def draw_art(self):
         pygame.draw.rect(self.screen, self.green, (700, 250, 150, 50))
         pygame.draw.rect(self.screen, self.green, (650, 100, 50, 200))
