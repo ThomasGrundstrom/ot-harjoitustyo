@@ -23,3 +23,10 @@
 - Alustava game over-näkymä lisätty pelin häviämisen jälkeen.
 - Snake ei voi enää kääntyä kahta kertaa saman "tickin" aikana.
 
+
+### Viikko 6
+
+- Pelin voittaminen mahdollista, jos snake saavuttaa maksimikoon, alustava voittonäkymä lisätty.
+- Snake lähtee liikkeelle vasta, kun käyttäjä antaa ensimmäisen syötteen nuolinäppäimillä.
+- Aloitusnäyttö pelille luotu.
+
