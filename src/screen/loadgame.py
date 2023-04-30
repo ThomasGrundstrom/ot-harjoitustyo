@@ -1,6 +1,7 @@
 import pygame
 from snakemap.snakemap import snakemap
 from score.scorecounter import scorecounter
+from actions.startmenuactions import startmenuactions
 
 
 class Screen:
@@ -15,36 +16,46 @@ class Screen:
         self.green = (0, 255, 0)
         self.red = (255, 0, 0)
         self.blue = (0, 255, 255)
+        self.instartmenu = True
 
         self.loop()
 
     def draw_screen(self):
-        self.screen.fill(self.white)
-        for y in range(12):
-            for x in range(12):
-                if snakemap.grid[y][x] == 1:
-                    pygame.draw.rect(self.screen, self.black,
-                                     (y*68, x*68, 68, 68))
-                elif snakemap.grid[y][x] == 2:
-                    pygame.draw.rect(self.screen, self.green,
-                                     (y*68, x*68, 68, 68))
-                elif snakemap.grid[y][x] == 3:
-                    pygame.draw.rect(self.screen, self.red,
-                                     (y*68, x*68, 68, 68))
-        scorefont = pygame.font.SysFont("Arial", 16)
-        txt = scorefont.render(f"SCORE: {scorecounter.score}", True, self.blue)
-        self.screen.blit(txt, (370, 10))
+        if not self.instartmenu:
+            self.screen.fill(self.white)
+            for y in range(12):
+                for x in range(12):
+                    if snakemap.grid[y][x] == 1:
+                        pygame.draw.rect(self.screen, self.black,
+                                         (y*68, x*68, 68, 68))
+                    elif snakemap.grid[y][x] == 2:
+                        pygame.draw.rect(self.screen, self.green,
+                                         (y*68, x*68, 68, 68))
+                    elif snakemap.grid[y][x] == 3:
+                        pygame.draw.rect(self.screen, self.red,
+                                         (y*68, x*68, 68, 68))
+            scorefont = pygame.font.SysFont("Arial", 16)
+            txt = scorefont.render(f"SCORE: {scorecounter.score}", True, self.blue)
+            self.screen.blit(txt, (370, 10))
 
-        if snakemap.gamewon:
-            self.wingame()
+            if snakemap.gamewon:
+                self.wingame()
 
-        if snakemap.gamelost:
-            self.losegame()
+            if snakemap.gamelost:
+                self.losegame()
+
+        else:
+            self.startscreen()
 
         pygame.display.flip()
         self.clock.tick(3)
 
     def loop(self):
+        while True:
+            if startmenuactions.check_actions() == "start":
+                self.instartmenu = False
+                break
+            self.draw_screen()
         while True:
             snakemap.update()
             self.draw_screen()
@@ -58,6 +69,14 @@ class Screen:
         txt = self.font.render("GAME OVER", True, self.red)
         self.screen.fill(self.black)
         self.screen.blit(txt, (330, 300))
+    
+    def startscreen(self):
+        welcometxt = self.font.render("Welcome to Pysnake", True, self.black)
+        playbuttontxt = self.font.render("PLAY", True, self.black)
+        self.screen.fill(self.white)
+        pygame.draw.rect(self.screen, self.green, (340, 300, 136, 68))
+        self.screen.blit(welcometxt, (270, 200))
+        self.screen.blit(playbuttontxt, (375, 315))
 
 
 screen = Screen()
