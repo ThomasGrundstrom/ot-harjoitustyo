@@ -35,7 +35,8 @@ class Screen:
                         pygame.draw.rect(self.screen, self.red,
                                          (y*68, x*68, 68, 68))
             scorefont = pygame.font.SysFont("Arial", 16)
-            txt = scorefont.render(f"SCORE: {scorecounter.score}", True, self.blue)
+            txt = scorefont.render(
+                f"SCORE: {scorecounter.score}", True, self.blue)
             self.screen.blit(txt, (370, 10))
 
             if snakemap.gamewon:
@@ -69,7 +70,7 @@ class Screen:
         txt = self.font.render("GAME OVER", True, self.red)
         self.screen.fill(self.black)
         self.screen.blit(txt, (330, 300))
-    
+
     def startscreen(self):
         welcometxt = self.font.render("Welcome to Pysnake", True, self.black)
         playbuttontxt = self.font.render("PLAY", True, self.black)

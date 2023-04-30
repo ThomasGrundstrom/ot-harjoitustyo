@@ -1,9 +1,10 @@
 import pygame
 
+
 class Startmenuactions:
     def __init__(self):
         pygame.init()
-    
+
     def check_actions(self):
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
