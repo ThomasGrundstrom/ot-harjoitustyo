@@ -11,5 +11,6 @@
 - 20.4: 2h: Tehty pelin häviäminen mahdolliseksi, game over-näkymä lisätty, snaken liikettä korjattu.
 - 23.4: 2h: Sekvenssikaavion teko, bugien korjausta.
 - 28.4: 1h: Snaken liikkeen suuntaa ohjaavan koodin optimointi, lisätty voittonäkymä.
+- 30.4: 4h: Lisätty score-laskuri ja aloitusnäyttö. Snake lähtee liikkeelle vasta ensimmäisestä käyttäjän syötteestä. Bugien korjaamista ja testausta.
 
-*Yhteensä: 26h*
+*Yhteensä: 30h*
