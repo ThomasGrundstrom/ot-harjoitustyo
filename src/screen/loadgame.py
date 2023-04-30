@@ -78,6 +78,19 @@ class Screen:
         pygame.draw.rect(self.screen, self.green, (340, 300, 136, 68))
         self.screen.blit(welcometxt, (270, 200))
         self.screen.blit(playbuttontxt, (375, 315))
+        self.draw_art()
+    
+    def draw_art(self):
+        pygame.draw.rect(self.screen, self.green, (700, 250, 150, 50))
+        pygame.draw.rect(self.screen, self.green, (650, 100, 50, 200))
+        pygame.draw.rect(self.screen, self.green, (450, 100, 200, 50))
+        pygame.draw.rect(self.screen, self.green, (200, 50, 300, 50))
+        pygame.draw.rect(self.screen, self.green, (150, 50, 50, 150))
+        pygame.draw.rect(self.screen, self.green, (100, 150, 50, 250))
+        pygame.draw.rect(self.screen, self.green, (150, 350, 50, 150))
+        pygame.draw.rect(self.screen, self.green, (150, 500, 200, 50))
+        pygame.draw.rect(self.screen, self.green, (300, 450, 150, 50))
+        pygame.draw.rect(self.screen, self.red, (500, 450, 50, 50))
 
 
 screen = Screen()
