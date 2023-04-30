@@ -1,5 +1,6 @@
 import pygame
 from snakemap.snakemap import snakemap
+from score.scorecounter import scorecounter
 
 
 class Screen:
@@ -13,6 +14,7 @@ class Screen:
         self.white = (255, 255, 255)
         self.green = (0, 255, 0)
         self.red = (255, 0, 0)
+        self.blue = (0, 255, 255)
 
         self.loop()
 
@@ -29,6 +31,9 @@ class Screen:
                 elif snakemap.grid[y][x] == 3:
                     pygame.draw.rect(self.screen, self.red,
                                      (y*68, x*68, 68, 68))
+        scorefont = pygame.font.SysFont("Arial", 16)
+        txt = scorefont.render(f"SCORE: {scorecounter.score}", True, self.blue)
+        self.screen.blit(txt, (370, 10))
 
         if snakemap.gamewon:
             self.wingame()
