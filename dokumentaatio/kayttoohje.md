@@ -11,3 +11,4 @@
 
 - Pelin alkuvalikko näyttää seuraavalta:
 
+![](./kuvat/startmenu.png)
