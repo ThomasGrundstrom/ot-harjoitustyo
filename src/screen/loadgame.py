@@ -106,7 +106,7 @@ class Screen:
     def draw_art(self):
 
         # Draws art on the display when the game is in the start menu state.
-    
+
         pygame.draw.rect(self.screen, self.green, (700, 250, 150, 50))
         pygame.draw.rect(self.screen, self.green, (650, 100, 50, 200))
         pygame.draw.rect(self.screen, self.green, (450, 100, 200, 50))

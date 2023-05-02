@@ -18,7 +18,7 @@ class Apple:
 
         # Sets the available squares that an apple can spawn.
         # Args: available: List of the coordinates of the squares that have a value of 0 on the map.
-    
+
         self.available = available
 
     def spawn(self):
