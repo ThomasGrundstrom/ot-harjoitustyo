@@ -13,5 +13,6 @@
 - 28.4: 1h: Snaken liikkeen suuntaa ohjaavan koodin optimointi, lisätty voittonäkymä.
 - 30.4: 4h: Lisätty score-laskuri ja aloitusnäyttö. Snake lähtee liikkeelle vasta ensimmäisestä käyttäjän syötteestä. Bugien korjaamista ja testausta.
 - 2.5: 1h: Lisätty docstring-dokumentaatio.
+- 3.5: 1h: Tehty käyttöohje.
 
-*Yhteensä: 31h*
+*Yhteensä: 32h*
