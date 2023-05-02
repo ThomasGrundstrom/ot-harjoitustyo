@@ -12,5 +12,6 @@
 - 23.4: 2h: Sekvenssikaavion teko, bugien korjausta.
 - 28.4: 1h: Snaken liikkeen suuntaa ohjaavan koodin optimointi, lisätty voittonäkymä.
 - 30.4: 4h: Lisätty score-laskuri ja aloitusnäyttö. Snake lähtee liikkeelle vasta ensimmäisestä käyttäjän syötteestä. Bugien korjaamista ja testausta.
+- 2.5: 1h: Lisätty docstring-dokumentaatio.
 
-*Yhteensä: 30h*
+*Yhteensä: 31h*
