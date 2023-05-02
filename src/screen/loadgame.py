@@ -5,7 +5,13 @@ from actions.startmenuactions import startmenuactions
 
 
 class Screen:
+
+    # Class that takes care of drawing the pygame display, as well as updating it.
+
     def __init__(self):
+
+        # The constructor of the class, that initializes the display, and the fonts and colours needed in drawing the display.
+
         pygame.init()
         self.screen = pygame.display.set_mode((816, 816))
         pygame.display.set_caption("Pysnake")
@@ -21,6 +27,9 @@ class Screen:
         self.loop()
 
     def draw_screen(self):
+
+        # Takes care of drawing objects on the screen depending on their positions.
+
         if not self.instartmenu:
             self.screen.fill(self.white)
             for y in range(12):
@@ -52,6 +61,9 @@ class Screen:
         self.clock.tick(3)
 
     def loop(self):
+
+        # A loop that runs the game by retrieving updates from the map, and drawing the objects in the corresponding positions on the display.
+
         while True:
             if startmenuactions.check_actions() == "start":
                 self.instartmenu = False
@@ -64,16 +76,25 @@ class Screen:
             self.draw_screen()
 
     def wingame(self):
+
+        # Displays a victory view on the screen. Runs when game is won.
+
         txt = self.font.render("CONGRATULATIONS!", True, self.black)
         self.screen.fill(self.white)
         self.screen.blit(txt, (270, 300))
 
     def losegame(self):
+
+        # Displays a game over view on the screen. Runs when game is lost.
+
         txt = self.font.render("GAME OVER", True, self.red)
         self.screen.fill(self.black)
         self.screen.blit(txt, (330, 300))
 
     def startscreen(self):
+
+        # Draws the initial start menu for when the game is started.
+
         welcometxt = self.font.render("Welcome to Pysnake", True, self.black)
         playbuttontxt = self.font.render("PLAY", True, self.black)
         self.screen.fill(self.white)
@@ -83,6 +104,9 @@ class Screen:
         self.draw_art()
 
     def draw_art(self):
+
+        # Draws art on the display when the game is in the start menu state.
+    
         pygame.draw.rect(self.screen, self.green, (700, 250, 150, 50))
         pygame.draw.rect(self.screen, self.green, (650, 100, 50, 200))
         pygame.draw.rect(self.screen, self.green, (450, 100, 200, 50))

@@ -3,10 +3,19 @@ from entities.snake import snake
 
 
 class Actions:
+
+    # Class that observes the inputs of the user while the game is running.
+
     def __init__(self):
+
+        # Constructor that introduces pygame.
+
         pygame.init()
 
     def check_actions(self):
+
+        # Observes the user's inputs and turns the snake's direction.
+
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 exit()

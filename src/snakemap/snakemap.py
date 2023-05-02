@@ -4,7 +4,13 @@ from entities.apples import apple
 
 
 class Gamemap:
+
+    # Class that creates the map that the game is played on, and updates the positions of the objects on the map.
+
     def __init__(self):
+
+        # Constructor of the class that initializes the map as an array and places the objects in their starting positions.
+
         self.grid = [[0 for i in range(12)] for j in range(12)]
         for i in range(12):
             self.grid[i][0] = 1
@@ -19,6 +25,9 @@ class Gamemap:
         self.gamelost = False
 
     def updateavailable(self):
+
+        # Updates the list that contains the coordinates of empty squares on the map.
+
         tempavailable = []
         for y in range(1, 11):
             for x in range(1, 11):
@@ -29,14 +38,23 @@ class Gamemap:
             self.wingame()
 
     def wingame(self):
+
+        # Stops the snake's movement and sets the state of the game as won.
+
         snake.set_stationary()
         self.gamewon = True
 
     def losegame(self):
+
+        # Stops the snake's movement and sets the state of the game as lost.
+
         snake.set_stationary()
         self.gamelost = True
 
     def update(self):
+
+        # Updates the positions of the objects on the map according to the inputs the user makes. Updates the state of the game if game is won or lost.
+
         actions.check_actions()
         snake.move_snake()
         if snake.positions[-1][0] == 0 or snake.positions[-1][0] == 11:
