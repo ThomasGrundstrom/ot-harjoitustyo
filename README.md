@@ -1,4 +1,6 @@
-## Ohjelmistotekniikka, harjoitustyö
+## Ohjelmistotekniikka, Pysnake
+
+Pysnake on Pythonilla tehty versio tunnetusta snake-pelistä. Pelissä tarkoituksena on ohjata snakea ruudulla ja kerätä mahdollisimman paljon omenoita. Joka kerta kun snake syö omenan, snaken pituus kasvaa yhden ruudun verran. Jos snake törmää itseensä, tai johonkin ruudun reunoilla olevista seinistä, häviät pelin. Jos taas saat kerättyä niin paljon omenoita, että snake täyttää koko ruudun, voitat pelin.
 
 ### Dokumentaatio
 
