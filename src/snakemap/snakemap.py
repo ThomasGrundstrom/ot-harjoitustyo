@@ -1,6 +1,7 @@
 from entities.snake import snake
 from actions.actions import actions
 from entities.apples import apple
+from score.scorecounter import scorecounter
 
 
 class Gamemap:
@@ -75,7 +76,25 @@ class Gamemap:
                     self.grid[y][x] = 0
                 if y == apple.y and x == apple.x and (apple.y, apple.x) not in snake.positions:
                     self.grid[y][x] = 3
+        if actions.restarting:
+            self.restart()
         return self.grid
+    
+    def restart(self):
+        self.grid = [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
+        snake.x = 4
+        snake.y = 4
+        snake.direction = 1
+        snake.moving = False
+        snake.changeddirections = False
+        snake.positions = [(3, 4), (4, 4)]
+        apple.y = 7
+        apple.x = 7
+        apple.available = []
+        scorecounter.score = 0
+        self.gamewon = False
+        self.gamelost = False
+        actions.restarting = False
 
 
 snakemap = Gamemap()

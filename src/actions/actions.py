@@ -11,6 +11,7 @@ class Actions:
         # Constructor that introduces pygame.
 
         pygame.init()
+        self.restarting = False
 
     def check_actions(self):
 
@@ -29,6 +30,8 @@ class Actions:
                     snake.moveleft()
                 if event.key == pygame.K_RIGHT:
                     snake.moveright()
+                if event.key == pygame.K_r:
+                    self.restarting = True
 
 
 actions = Actions()
