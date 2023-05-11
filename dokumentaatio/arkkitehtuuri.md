@@ -64,6 +64,7 @@ Tilanteessa, jossa käyttäjä käynnistää pelin ja ohjaa snaken ensimmäisell
 	participant pygame
 	participant Snake
 	participant Apple
+	participant Scorecounter
 	User->>game: poetry run invoke start
 	game->>Screen: loop()
 	User->>pygame: K_RIGHT
@@ -114,6 +115,7 @@ Tilanteessa, jossa käyttäjä käynnistää pelin ja ohjaa snaken ensimmäisell
 	Actions-->>Gamemap: 
 	Gamemap->>Snake: move_snake()
 	Snake->>Apple: spawn()
+	Apple->>Scorecounter: add_score()
 	Apple-->>Snake: available[position]
 	Snake-->>Gamemap: 
 	Gamemap->>Gamemap: updateavailable()
