@@ -14,6 +14,6 @@
 - 30.4: 4h: Lisätty score-laskuri ja aloitusnäyttö. Snake lähtee liikkeelle vasta ensimmäisestä käyttäjän syötteestä. Bugien korjaamista ja testausta.
 - 2.5: 1h: Lisätty docstring-dokumentaatio.
 - 3.5: 1h: Tehty käyttöohje.
-- 11.5: 1h: Lisätty restart-ominaisuus, korjattu virheelliset testit.
+- 11.5: 2h: Lisätty restart-ominaisuus, korjattu virheelliset testit. Paranneltu arkkitehtuurikuvausta.
 
-*Yhteensä: 33h*
+*Yhteensä: 34h*
