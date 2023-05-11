@@ -66,6 +66,7 @@ Tilanteessa, jossa käyttäjä käynnistää pelin ja ohjaa snaken ensimmäisell
 	participant Apple
 	User->>game: poetry run invoke start
 	game->>Screen: loop()
+	User->>pygame: K_RIGHT
 	loop Until screen updates when snake has x value of 7
 	Screen->>Gamemap: update()
 	Gamemap->>Actions: check_actions()
