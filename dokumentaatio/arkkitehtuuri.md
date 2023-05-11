@@ -1,3 +1,19 @@
+# Arkkitehtuurikuvaus
+
+## Käyttöliittymä
+
+Ohjelma koostuu seuraavista näkymistä:
+
+- Alkuvalikko
+- Pelinäkymä
+- Voittonäkymä
+- Häviönäkymä
+
+Näkymät on toteutettu Screen-luokan metodeina ja jokin niistä on aina ruudulla. Näkymien näyttämisestä ja vaihtamisesta vastaa Screen-luokka.
+
+Kun sovellus käynnistetään, ensimmäisenä näkyviin tulee alkuvalikko. Alkuvalikosta siirrytään pelinäkymään painamalla valikossa olevaa play-näppäintä. Pelitilasta pääsee voittonäkymään vain voittamalla pelin, eli kasvattamalla snaken koko ruudun kokoiseksi. Pelitilasta häviönäkymään siirtyminen tapahtuu, jos snake törmää johonkin ruudun reunoilla olevista seinistä tai itseensä.
+
+
 ## Luokkakaavio:
 
 Ohjelma koostuu luokista Screen, Startmenuactions, Gamemap, Actions, Snake, Apple ja Scorecounter. Ohjelman luokkakaavio näyttää seuraavalta:
@@ -20,12 +36,17 @@ Ohjelma koostuu luokista Screen, Startmenuactions, Gamemap, Actions, Snake, Appl
 		+clock
 		+draw_screen()
 		+loop()
+		+wingame()
+		+losegame()
+		+startscreen()
+		+draw_art()
 	}
 	class Gamemap{
 		+List grid
 		+List zeros
 		+updateavailable()
 		+update()
+		+restart()
 	}
 	class Actions{
 		+pygame
@@ -34,16 +55,16 @@ Ohjelma koostuu luokista Screen, Startmenuactions, Gamemap, Actions, Snake, Appl
 	class Snake{
 		+int x
 		+int y
-		+bool up
-		+bool down
-		+bool left
-		+bool right
+		+int direction
+		+bool moving
+		+bool changeddirections
 		+List positions
 		+moveup()
 		+movedown()
 		+moveleft()
 		+moveright()
 		+move_snake()
+		+set_stationary()
 	}
 	class Apple{
 		+int y
