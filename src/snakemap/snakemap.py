@@ -81,6 +81,9 @@ class Gamemap:
         return self.grid
 
     def restart(self):
+
+        # Upon restarting the game, resets all the required values.
+
         self.grid = [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
                      [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
                      [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],

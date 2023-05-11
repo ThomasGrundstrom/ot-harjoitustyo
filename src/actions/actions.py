@@ -8,14 +8,14 @@ class Actions:
 
     def __init__(self):
 
-        # Constructor that introduces pygame.
+        # Constructor that introduces pygame and indicates when game is restarting.
 
         pygame.init()
         self.restarting = False
 
     def check_actions(self):
 
-        # Observes the user's inputs and turns the snake's direction.
+        # Observes the user's inputs and turns the snake's direction. If r key is pressed, restarts the game.
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
