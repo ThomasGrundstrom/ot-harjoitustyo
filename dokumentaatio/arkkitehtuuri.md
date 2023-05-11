@@ -1,13 +1,19 @@
 ## Luokkakaavio:
 
+Ohjelma koostuu luokista Screen, Startmenuactions, Gamemap, Actions, Snake, Apple ja Scorecounter. Ohjelman luokkakaavio näyttää seuraavalta:
+
 ```mermaid
  classDiagram
 	Screen <|-- Gamemap
+	Screen <|-- Scorecounter
+	Screen <|-- Startmenuactions
 	Gamemap <|-- Actions
+	Gamemap <|-- Scorecounter
 	Actions <|-- Snake
 	Gamemap <|-- Snake
 	Snake <|-- Apple
 	Gamemap <|-- Apple
+	Apple <|-- Scorecounter
 	class Screen{
 		+pygame
 		+screen
@@ -45,6 +51,14 @@
 		+List available
 		+set_available()
 		+spawn()
+	}
+	class Scorecounter{
+		+int score
+		+add_score()
+	}
+	class Startmenuactions{
+		+pygame
+		+check_actions()
 	}
 
 ```
