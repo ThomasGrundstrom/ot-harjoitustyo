@@ -30,3 +30,6 @@
 - Snake lähtee liikkeelle vasta, kun käyttäjä antaa ensimmäisen syötteen nuolinäppäimillä.
 - Aloitusnäyttö pelille luotu.
 
+### Viikko 7
+
+- Pelin voi käynnistää uudelleen r-näppäimellä.
