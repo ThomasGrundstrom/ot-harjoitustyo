@@ -25,5 +25,5 @@ Peli koostuu aloitusnäytöstä, varsinaisesta pelistä, sekä game over-näkymi
 - Lisää vaikeustasoja, esim. snaken liikkeen nopeuttaminen tai hidastaminen, tai esteiden lisääminen kartalle.
 - Ohjenäkymä.
 
-**Kosmeettiset**
+**Kosmeettiset:**
 - Jaksollisesti silmukassa kulkeva animaatio aloitusnäytöllä ja game over-näkymissä.
