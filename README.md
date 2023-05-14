@@ -17,9 +17,16 @@ Pysnake on Pythonilla tehty versio tunnetusta snake-pelistä. Pelissä tarkoituk
 - [Testausdokumentti](https://github.com/ThomasGrundstrom/ot-harjoitustyo/blob/master/dokumentaatio/testausdokumentaatio.md)
 
 
-## Ohjelman komentorivikomennot:
+## Asennus
 
-**Aluksi pitää ladata tarvittavat riippuvuudet komellolla:** _**poetry install**_
+1. Lataa [Pysnake](https://github.com/ThomasGrundstrom/ot-harjoitustyo/releases/tag/viikko7)
+2. Pura zip-pakkaus
+3. Mene komentorivillä puretun pakkauksen juurihakemistoon (hakemistossa on pyproject.toml-tiedosto)
+4. Asenna tarvittavat riippuvuudet komennolla: **poetry install**
+5. Käynnistä ohjelma komennolla: **poetry run invoke start**
+
+
+## Ohjelman komentorivikomennot:
 
 - Ohjelman käynnistäminen toimii komennolla: **poetry run invoke start**
 - Ohjelman testit suoritetaan komennolla: **poetry run invoke test**
