@@ -24,14 +24,19 @@ class Actions:
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_UP:
                     snake.moveup()
+                    return 0
                 if event.key == pygame.K_DOWN:
                     snake.movedown()
+                    return 2
                 if event.key == pygame.K_LEFT:
                     snake.moveleft()
+                    return 3
                 if event.key == pygame.K_RIGHT:
                     snake.moveright()
+                    return 1
                 if event.key == pygame.K_r:
                     self.restarting = True
+                    return 4
 
 
 actions = Actions()
