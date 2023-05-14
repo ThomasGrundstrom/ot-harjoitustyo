@@ -1,8 +1,8 @@
-## Ohjelmistotekniikka, Pysnake
+# Ohjelmistotekniikka, Pysnake
 
 Pysnake on Pythonilla tehty versio tunnetusta snake-pelistä. Pelissä tarkoituksena on ohjata snakea ruudulla ja kerätä mahdollisimman paljon omenoita. Joka kerta kun snake syö omenan, snaken pituus kasvaa yhden ruudun verran. Jos snake törmää itseensä, tai johonkin ruudun reunoilla olevista seinistä, häviät pelin. Jos taas saat kerättyä niin paljon omenoita, että snake täyttää koko ruudun, voitat pelin.
 
-### Dokumentaatio
+## Dokumentaatio
 
 [Käyttöohje](https://github.com/ThomasGrundstrom/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
 
@@ -14,11 +14,8 @@ Pysnake on Pythonilla tehty versio tunnetusta snake-pelistä. Pelissä tarkoituk
 
 [arkkitehtuuri.md](https://github.com/ThomasGrundstrom/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
-[Viikko 5 release](https://github.com/ThomasGrundstrom/ot-harjoitustyo/releases/tag/viikko5)
 
-
-
-### Ohjelman komentorivikomennot:
+## Ohjelman komentorivikomennot:
 
 **Aluksi pitää ladata tarvittavat riippuvuudet komellolla:** _**poetry install**_
 
