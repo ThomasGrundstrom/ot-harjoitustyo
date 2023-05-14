@@ -27,4 +27,4 @@
 - Snake kasvaa yhden ruudun verran pidemmäksi aina syötyään omenan.
 - Pelin voittaa, jos snake kasvaa koko kartan kokoiseksi.
 - Pelin häviää, jos snake törmää itseensä tai johonkin karttaa ympäröivistä seinistä.
-- Pelin voi käynnistää uudelleen painamalla r-näppäintä näppäimistöllä.
+- Pelin voi käynnistää uudelleen painamalla R-näppäintä näppäimistöllä.
