@@ -1,6 +1,6 @@
 # Testausdokumentti
 
-Pysnaken testaus on suoritettu automatisoidulla pytestillä sekä manuaalisesti.
+Pysnaken testaus on suoritettu automatisoidulla unittestillä sekä manuaalisesti.
 
 
 ### Testit
