@@ -16,6 +16,6 @@
 - 3.5: 1h: Tehty käyttöohje.
 - 11.5: 2h: Lisätty restart-ominaisuus, korjattu virheelliset testit. Paranneltu arkkitehtuurikuvausta.
 - 13.5: 3h: Luotu lisää testejä ohjelmalle.
-- 14.5: 1h: Lisätty high score counter ja muokattu game over-näkymiä.
+- 14.5: 3h: Lisätty high score counter ja muokattu game over-näkymiä. Lisätty testejä ohjelmalle.
 
-*Yhteensä: 38h*
+*Yhteensä: 40h*
