@@ -15,5 +15,6 @@
 - 2.5: 1h: Lisätty docstring-dokumentaatio.
 - 3.5: 1h: Tehty käyttöohje.
 - 11.5: 2h: Lisätty restart-ominaisuus, korjattu virheelliset testit. Paranneltu arkkitehtuurikuvausta.
+- 13.5: 3h: Luotu lisää testejä ohjelmalle.
 
-*Yhteensä: 34h*
+*Yhteensä: 37h*
