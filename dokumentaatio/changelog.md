@@ -33,3 +33,5 @@
 ### Viikko 7
 
 - Pelin voi käynnistää uudelleen r-näppäimellä.
+- High score counter lisätty
+
