@@ -24,8 +24,6 @@ class Screen:
         self.blue = (0, 255, 255)
         self.instartmenu = True
 
-        self.loop()
-
     def draw_screen(self):
 
         # Takes care of drawing objects on the screen depending on their positions.
