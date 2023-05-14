@@ -9,3 +9,7 @@ Automaattiset *poetry run invoke test*-komennolla suoritettavat testit löytyvä
 
 
 ### Testikattavuus
+
+Automaattisten testien kattavuus on 68%.
+
+![](./kuvat/testcoverage.png)
