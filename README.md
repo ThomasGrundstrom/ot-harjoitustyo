@@ -4,15 +4,17 @@ Pysnake on Pythonilla tehty versio tunnetusta snake-pelistä. Pelissä tarkoituk
 
 ## Dokumentaatio
 
-[Käyttöohje](https://github.com/ThomasGrundstrom/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
+- [Käyttöohje](https://github.com/ThomasGrundstrom/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
 
-[vaatimusmaarittely.md](https://github.com/ThomasGrundstrom/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+- [Vaatimusmaarittely](https://github.com/ThomasGrundstrom/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
-[tyoaikakirjanpito.md](https://github.com/ThomasGrundstrom/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
+- [Tyoaikakirjanpito](https://github.com/ThomasGrundstrom/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
 
-[changelog.md](https://github.com/ThomasGrundstrom/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
+- [Changelog](https://github.com/ThomasGrundstrom/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
 
-[arkkitehtuuri.md](https://github.com/ThomasGrundstrom/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+- [Arkkitehtuuri](https://github.com/ThomasGrundstrom/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+
+- [Testausdokumentti](https://github.com/ThomasGrundstrom/ot-harjoitustyo/blob/master/dokumentaatio/testausdokumentaatio.md)
 
 
 ## Ohjelman komentorivikomennot:
