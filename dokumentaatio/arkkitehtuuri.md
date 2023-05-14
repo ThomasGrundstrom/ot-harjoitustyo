@@ -160,3 +160,13 @@ Tilanteessa, jossa käyttäjä käynnistää pelin ja ohjaa snaken ensimmäisell
 	Screen->>Screen: draw_screen()
 
 ```
+
+
+## Muut toiminnallisuudet
+
+Ohjelma toimii samalla tavalla kunnes peli hävitään tai voitetaan. Näissä tilanteissa snakemap-luokan tila päivittyy ja screen-luokka näyttää pelin loppunäkymän. Jos peli aloitetaan alusta R-näppäimellä, snakemap-luokka huolehtii tarvittavien arvojen nollaamisesta.
+
+
+## Rakenteen heikkoudet
+
+Ohjelman koodi oltaisiin voitu jakaa useampaan pienempään luokkaan. Tämänhetkisessä tilanteessa ohjelmassa on luokkia, jotka huolehtivat turhan monesta eri asiasta. Lisäksi pylint-virheitä on melko paljon.
