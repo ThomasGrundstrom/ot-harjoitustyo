@@ -44,7 +44,9 @@ class Screen:
             scorefont = pygame.font.SysFont("Arial", 16)
             txt = scorefont.render(
                 f"SCORE: {scorecounter.score}", True, self.blue)
-            self.screen.blit(txt, (370, 10))
+            high = scorefont.render(f"HIGH SCORE: {scorecounter.highscore}", True, self.blue)
+            self.screen.blit(txt, (370, 8))
+            self.screen.blit(high, (347, 25))
 
             if snakemap.gamewon:
                 self.wingame()
@@ -78,16 +80,32 @@ class Screen:
         # Displays a victory view on the screen. Runs when game is won.
 
         txt = self.font.render("CONGRATULATIONS!", True, self.black)
+        font = pygame.font.SysFont("Arial", 20)
+        maxscoretxt = font.render("MAXIMUM SCORE REACHED!", True, self.black)
+        scoretext = font.render(f"Score: {scorecounter.score}", True, self.black)
+        highscoretext = font.render(f"High score: {scorecounter.highscore}", True, self.black)
+        instructions = font.render("Press R to restart the game", True, self.black)
         self.screen.fill(self.white)
         self.screen.blit(txt, (270, 300))
+        self.screen.blit(maxscoretxt, (272, 350))
+        self.screen.blit(scoretext, (370,400))
+        self.screen.blit(highscoretext, (347, 420))
+        self.screen.blit(instructions, (280, 470))
 
     def losegame(self):
 
         # Displays a game over view on the screen. Runs when game is lost.
 
         txt = self.font.render("GAME OVER", True, self.red)
+        font = pygame.font.SysFont("Arial", 20)
+        scoretxt = font.render(f"Score: {scorecounter.score}", True, self.red)
+        highscoretxt = font.render(f"High score: {scorecounter.highscore}", True, self.red)
+        instructions = font.render(f"Press R to restart the game", True, self.red)
         self.screen.fill(self.black)
-        self.screen.blit(txt, (330, 300))
+        self.screen.blit(txt, (315, 300))
+        self.screen.blit(scoretxt, (370, 350))
+        self.screen.blit(highscoretxt, (347, 370))
+        self.screen.blit(instructions, (280, 420))
 
     def startscreen(self):
 
